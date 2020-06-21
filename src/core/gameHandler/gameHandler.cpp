@@ -1,0 +1,9 @@
+gameHandler::gameHandler()
+{
+
+}
+
+~gameHandler::gameHandler()
+{
+
+}

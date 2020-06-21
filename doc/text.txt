@@ -1,0 +1,52 @@
+./doc folder will contain a .pdf file with documentation about arcade
+
+
+./games
+    games (at least 2) pacman and nibbler ?
+
+
+./lib
+    - nCurse
+    - SFML
+    - OpenGL
+
+games libraries must be named lib_arcade_$gamename.so
+    exemple:
+        - lib_arcade_nibbler.so
+        - lib_arcade_pacman.so
+
+graphics libraries must be named lib_arcade_$libraryname.so
+    examples:
+        - lib_arcade_ndk++.so
+        - lib_arcade_sdl2.so
+
+running exemple : ./arcade ./lib_arcade_opengl.so
+    when program start display :
+        availables games (./games)
+        graphic lib (./lib)
+        scores
+        field for user enter their name
+
+
+Gestion Erreur :
+    more or less that one argument, print usage and exit
+    dynamic lib not exist or not compatible, error message and exit
+
+Display help (for games)
+Display help for command/keys
+
+Raccourcis :
+    previous graphi lib : o
+    next graph lib : p
+    previous game : u
+    next game : i
+    restart game : *
+    go back menu : m
+    pause : p
+    exit : !
+
+pause : play - restart - help game - raccourcis - exit
+
+
+Must share your graphical and game library interfaces with at least one other project group. 
+After turnin, it will therefore be possible to run your games using their launcher and graphical libraries, and vice-versa
